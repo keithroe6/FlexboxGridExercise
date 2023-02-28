@@ -1,0 +1,108 @@
+section:not(#three) {
+    height: 400px;
+    margin: 10px 0;
+   }
+   #one {
+    background-color: rgb(150, 150, 150);
+   }
+   #two {
+    background-color: rgb(205, 205, 205);
+   }
+   #three {
+    background-color: rgb(150, 150, 150);
+    width: 400px;
+    margin-bottom: 200px;
+   }
+   div {
+    width: 90px;
+    height: 90px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #two div {
+    width: 175px;
+   }
+   #red {
+    background-color: red;
+   }
+   #green {
+    background-color: green;
+   }
+   #blue {
+    background-color: blue;
+   }
+   #orange {
+    background-color: orange;
+   }
+   #purple {
+    background-color: purple;
+   }
+   #brown {
+    background-color: brown;
+   }
+   p {
+    margin: 0;
+    background-color: #0C2340;
+    border: 2px solid #AE9142;
+    font-size: 30px;
+    color: #C99700;
+    text-align: center;
+   }
+   p:nth-of-type(even) {
+    color: #00843D;
+   }
+   
+   /* START BELOW THIS LINE */
+
+   /* 1.  select section with red, green and blue squares and use flexbox*/
+    
+   #one{
+    display: flex;
+
+    /* 2. move RGB boxes to upper right corner */
+    justify-content: flex-end;
+
+    /* 3.Change main axis from horizontal to vertical */
+    flex-direction: column;
+
+    /* 4. Move boxes to the center */
+    align-items: center;
+    
+   }
+   
+       /* 5. apply flexbox to orange purple and brown OPB squares */
+
+    #two{
+    display: flex;
+    
+    /* 6. center vertically inside container */
+    align-items: center;
+
+    /* 7. Spread OPB boxes evenly apart */
+    justify-content: space-between;
+
+    /* 8. Set the flex wrap function */
+    flex-wrap: wrap;
+    }
+
+    /* 9. Using Grid */
+    #three{
+        display: grid;
+    
+    /*10. make 4 equal columns  */
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+     /* 11. Set all rows to 100px */
+      grid-auto-rows: 100px;
+
+
+    }
+
+    
+
