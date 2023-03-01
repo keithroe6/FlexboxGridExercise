@@ -68,7 +68,7 @@ section:not(#three) {
     /* 2. move RGB boxes to upper right corner */
     justify-content: flex-end;
 
-    /* 3.Change main axis from horizontal to vertical */
+    /* 3.Change main axis from horizontal to vertical and move to bottom left corner*/
     flex-direction: column;
 
     /* 4. Move boxes to the center */
@@ -91,18 +91,18 @@ section:not(#three) {
     flex-wrap: wrap;
     }
 
-    /* 9. Using Grid */
+    /* 9. Using Grid */ 
     #three{
-        display: grid;
+     display: grid;
     
     /*10. make 4 equal columns  */
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+     grid-template-columns: repeat(4, 1fr);
 
      /* 11. Set all rows to 100px */
       grid-auto-rows: 100px;
 
+    }    
 
-    }
-
+    /* BONUS 1. */
     
-
