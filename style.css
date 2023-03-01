@@ -104,5 +104,70 @@ section:not(#three) {
 
     }    
 
-    /* BONUS 1. */
-    
+    /* BONUS 1. Super Secret Bonus*/
+    /* #p-one { */
+      /* grid-column-start: 6; */
+      /* grid-column-end: 7; */
+      /* grid-row-start: 2; */
+      /* grid-row-end: 3; */
+    /* } */
+
+/* Real Bonus 1. */
+#one{
+  flex-direction: column-reverse;
+}
+
+/* Bonus 2 */
+/* #two{ */
+  /* flex-direction: row-reverse; */
+/* } */
+
+/* Bonus 3 */
+
+#orange{
+  order: 2;
+}
+#purple{
+  order: 3;
+  align-self: flex-end;
+}
+
+#brown {
+  order: 1;
+  align-self: flex-start;
+}
+
+#p-one{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+#p-two{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+#p-three{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+#p-four{
+  grid-column-start: 2;
+  grid-column-end: 4;
+grid-row-start: 2;
+grid-row-end: 4;
+
+}
+#p-five{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+#p-six{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#p-eight{
+  grid-column: 2/5;
+}
